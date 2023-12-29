@@ -3,6 +3,9 @@
 AFMPL is a Python and R hardcode setup to perform image analysis of fiber-like objects, captured by means of atomic force microscopy (AFM). Setup is highly inspired by the FiberApp script, described previously in paper: 
 Usov, I., & Mezzenga, R. (2015). FiberApp: an open-source software for tracking and analyzing polymers, filaments, biomacromolecules, and fibrous objects. Macromolecules, 48(5), 1269-1280. DOI: 10.1021/ma502264c.
 Current setup consist of three scripts - AFMPL_start_end_point.py, AFMPL_astat_path.py, and AFMPL_data_treatment.R - and allows to handle raw Nanoscope AFM images, perform its correction, conduct semi-automatic fiber backbone recognition with A* pathfinding algorithm, output and analyse its main data (height, contour length, persistence length, fiber and segment tangent angles, contour coordinates, etc.).
+Visual Studio Code version: 1.85.1
+Python version: 3.12.1.
+RStudio version: 2022.07.1 Build 554
 
 # AFMPL_start_end_point.py
 
@@ -19,6 +22,6 @@ Interaction with image processing interface:
 ![Figure_2](https://github.com/vchibrikov/AFMPL/assets/98614057/5ce425fd-e7b1-4acd-856e-1db51d724afa)
 
 Structure of output file on fiber coordinates:
-![Screenshot 2023-12-29 at 21 09 22](https://github.com/vchibrikov/AFMPL/assets/98614057/b453af24-a818-4b23-a537-ade9420408eb)
+![Figure 3](https://github.com/vchibrikov/AFMPL/assets/98614057/b453af24-a818-4b23-a537-ade9420408eb)
 
 
