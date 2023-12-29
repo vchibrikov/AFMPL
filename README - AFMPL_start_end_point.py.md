@@ -19,6 +19,6 @@ Interaction with image processing interface:
 ![Figure_2](https://github.com/vchibrikov/AFMPL/assets/98614057/5ce425fd-e7b1-4acd-856e-1db51d724afa)
 
 Structure of output file on fiber coordinates:
+![Screenshot 2023-12-29 at 21 09 22](https://github.com/vchibrikov/AFMPL/assets/98614057/b453af24-a818-4b23-a537-ade9420408eb)
 
-<img width="392" alt="Screenshot 2023-12-29 at 21 09 22" src="https://github.com/vchibrikov/AFMPL/assets/98614057/8e30dd71-ff3a-4919-adab-444ed4445129">
 
