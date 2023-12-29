@@ -29,6 +29,8 @@ Example of a path heigth (in nm) evaluation output:
 Example of a path angle (in deg.) evaluation output:
 ![Screenshot 2023-12-29 at 22 12 04](https://github.com/vchibrikov/AFMPL/assets/98614057/9cc0a78c-1849-4edc-a0d3-8009d2dcf970)
 
+
+
 Example of a path coordinates (x;y) evaluation output:
 ![Screenshot 2023-12-29 at 22 12 30](https://github.com/vchibrikov/AFMPL/assets/98614057/c7e557ae-e44a-45d9-a381-874e29c7cedc)
 
