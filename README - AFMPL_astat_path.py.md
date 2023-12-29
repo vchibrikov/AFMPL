@@ -7,47 +7,8 @@ Python version: 3.12.1.
 RStudio version: 2022.07.1 Build 554
 
 ## AFMPL_astat_path.py
-This Python script performs path planning on Atomic Force Microscopy (AFM) images using the A* algorithm. It analyzes the topography of AFM images, calculates paths between specified points, and extracts various metrics, such as height, contour length, fiber tangent angles, contour coordinates, etc.
-
-## Usage
-Set the input and output folders in the script.
-Ensure the required libraries are installed (pip install pandas numpy pySPM scikit-image matplotlib timeout_decorator).
-Run the script.
-
-## Functions
-### astar_pathfinding_timeout: A* pathfinding algorithm with a timeout.
-### Parameters:
-grid: 2D DataFrame representing the terrain.
-start: Tuple (y, x) representing the starting point.
-goal: Tuple (y, x) representing the goal point.
-visualize: Boolean indicating whether to visualize the path.
-Returns: List of tuples representing the path from start to goal.
-
-### heuristic: Heuristic function for the A* algorithm.
-### Parameters:
-a: Tuple (y, x) representing the current point.
-b: Tuple (y, x) representing the goal point.
-distance_weight: Weight for distance in the heuristic calculation.
-value_weight: Weight for terrain value in the heuristic calculation.
-Returns: Heuristic value.
-
-### calculate_contour_length: Calculate the contour length of a path.
-### Parameters:
-path: List of tuples representing the path.
-Returns: Contour length.
-
-### calculate_shortest_distance: Calculate the shortest distance between start and end points.
-### Parameters:
-start: Tuple (y, x) representing the starting point.
-end: Tuple (y, x) representing the end point.
-Returns: Shortest distance.
-
-### calculate_angles: Calculate angles between three consecutive points in a path.
-### Parameter: path: List of tuples representing the path.
-Returns: List of angles in degrees.
-
-## Data Output
-The script generates several CSV files containing data values, contour lengths, shortest distances, and path angles.
+The script imports Bruker AFM images, processes them, and creates heatmaps using Matplotlib for visualization (optionally). With 'astar_pathfinding_timeout' script performs A* pathfinding algorithm with a timeout, returning list of tuples representing the path from start to goal. With 'heuristic' script calculates contour length of a path, returning list of tuples representing the path. 'calculate_shortest_distance' allows to calculate the shortest distance between start and end points of each path. 'calculate_angles' allow to calculate angles between three consecutive points in a path, resulting list of angles in degrees as an output.
+Script allows to extracts various metrics, such as fiber height, fiber contour length, fiber tangent angles, fiber contour coordinates, etc. to csv files.
 
 ## Examples
 Several examples of A* pathfinding algorithm: 
