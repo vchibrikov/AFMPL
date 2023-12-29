@@ -10,6 +10,7 @@ RStudio version: 2022.07.1 Build 554
 The script imports Bruker AFM images, processes them, and creates heatmaps using Matplotlib for visualization. With 'on_click(event)', script
 handles mouse button clicks, allowing for determination of the coordinates of fiber ends, with its further storage. With 'on_scroll(event)', script adjusts the plot limits based on the direction of the scroll, allowing to zoom image in and out. Main script initializes a list (selected_coordinates) to store fiber ends coordinates and specifies input and output folders. In addition, script iterates over the image files in the specified input folder, processes each image, and creates a heatmap for visualization. Output CSV filenames with defined coordinates are generated based on the current image filename with the suffix _coordinates.csv. Input and processed AFM images, as well as output image interaction interface and file of fiber coordinates are given below.
 
+## Examples
 Raw AFM image imported: 
 ![Figure_0](https://github.com/vchibrikov/AFMPL/assets/98614057/3830dba3-9d2c-4f05-b6b1-fc36164c2762)
 
