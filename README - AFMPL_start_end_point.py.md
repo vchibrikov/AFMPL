@@ -14,3 +14,4 @@ Raw AFM image imported:
 
 Processed AFM height sensor data (with an implemented removal of polynomial background, scars, plane correction):
 ![Figure_1](https://github.com/vchibrikov/AFMPL/assets/98614057/a577aee2-0a72-4118-9753-8e0a0511e4fe)
+
