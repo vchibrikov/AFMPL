@@ -17,4 +17,18 @@ Several examples of A* pathfinding algorithm:
 ![Figure_3](https://github.com/vchibrikov/AFMPL/assets/98614057/da7cf4c3-c71d-48f5-a8c6-01ebbf86eb19)
 ![Figure_4](https://github.com/vchibrikov/AFMPL/assets/98614057/a698c1e7-07c9-4ff7-b3fc-c5912868a0c5)
 
+Example of a contour length (in pixels) evaluation output:
+![Screenshot 2023-12-29 at 22 11 11](https://github.com/vchibrikov/AFMPL/assets/98614057/e4265385-5a01-4029-9c89-44e53a3537fe)
+
+Example of a shortest distance (in pixels) evaluation output:
+![Screenshot 2023-12-29 at 22 12 44](https://github.com/vchibrikov/AFMPL/assets/98614057/5726edd5-b89a-4d4b-ad0f-8d329d0fa521)
+
+Example of a path heigth (in nm) evaluation output:
+![Screenshot 2023-12-29 at 22 11 38](https://github.com/vchibrikov/AFMPL/assets/98614057/277c21a4-7f23-4a56-9e76-f6a3672e033c)
+
+Example of a path angle (in deg.) evaluation output:
+![Screenshot 2023-12-29 at 22 12 04](https://github.com/vchibrikov/AFMPL/assets/98614057/9cc0a78c-1849-4edc-a0d3-8009d2dcf970)
+
+Example of a path coordinates (x;y) evaluation output:
+![Screenshot 2023-12-29 at 22 12 30](https://github.com/vchibrikov/AFMPL/assets/98614057/c7e557ae-e44a-45d9-a381-874e29c7cedc)
 
