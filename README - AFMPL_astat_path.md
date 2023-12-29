@@ -32,3 +32,4 @@ Example of a path angle (in deg.) evaluation output:
 Example of a path coordinates (x;y) evaluation output:
 ![Screenshot 2023-12-29 at 22 12 30](https://github.com/vchibrikov/AFMPL/assets/98614057/c7e557ae-e44a-45d9-a381-874e29c7cedc)
 
+
