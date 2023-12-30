@@ -20,7 +20,9 @@ $R^2 = 4 \lambda (l - 2 \lambda (1 - e^{-\frac{l}{2\lambda}}))$
 
 where $λ$ is the persistence length and $R$ is the direct distance between any pair of segments along a contour separated by an arc length $l$.
 
-Image respresentation of MSED method is provided on image below:
+Graphical respresentation of MSED method is provided on image below:
+![PERSISTENCE_LENGTH_MSED_30 12 2023_VC](https://github.com/vchibrikov/AFMPL/assets/98614057/61b74b36-d63a-4d6c-8e48-eb746563630b)
+
 
 ## Bond correlation function (BCF)
 The bond correlation function (BCF) is the most general way to evaluate the persistence length. For a worm-like chains in 2D, it corresponds to the following equation:
@@ -29,6 +31,9 @@ $\cos(\theta) = e^{-\frac{l}{2\lambda}}$
 
  where $λ$ is the persistence length, $θ$ is the angle (in rad) between tangent directions of any two segments along a fibril contour separated by an arc length $l$.
 
+Graphical respresentation of BCF method is provided on image below:
+
+
 ## Mean-squared midpoint displacement (MSMD)
 
 A different method thatcan be successfully applied only to very stiff fiber-like objects ($l < λ$) is the mean-squared midpoint displacement (MSMD). The equation, describing the behavior of a midpoint deviation has the following form:
@@ -36,3 +41,6 @@ A different method thatcan be successfully applied only to very stiff fiber-like
 $u^2 = \frac{l^3}{48\lambda}$
 
 where $λ$ is the persistence length, $u^2$ is the mean-squared midpoint displacement between any pair of segments along a contour, separated by an arc length $l$. This expression is derived with an assumption that thesedeviations are small in comparison to the corresponding arclengths ($|u|≪l$).
+
+Graphical respresentation of MSMD method is provided on image below:
+
