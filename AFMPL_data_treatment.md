@@ -9,7 +9,9 @@ Current setup consist of three scripts - AFMPL_start_end_point.py, AFMPL_astat_p
 
 ## AFMPL_astat_path.py
 The script imports output data of AFMPL_astat_path.py script, processes them, routput and analyse its main data (height, contour length, persistence length, fiber and segment tangent angles, contour coordinates, etc.). Main accent in current code is focused on evaluation of persistence length by three methods - mean-squared end-to-end distance (MSED), bond correlation function (BCF), and mean-squared midpoint displacement (MSMD). Current methods on persistence length evaluation were previously show in paper:
-Usov, I., & Mezzenga, R. (2015). FiberApp: an open-source software for tracking and analyzing polymers, filaments, biomacromolecules, and fibrous objects. Macromolecules, 48(5), 1269-1280. DOI: 10.1021/ma502264c. Further method explanation is taken from the respected paper, and for more details, I strongly refer you to that paper.
+- Usov, I., & Mezzenga, R. (2015). FiberApp: an open-source software for tracking and analyzing polymers, filaments, biomacromolecules, and fibrous objects. Macromolecules, 48(5), 1269-1280. DOI: 10.1021/ma502264c.
+
+Further method explanation is taken from the respected paper, and for more details, I strongly refer you to that paper.
 
 ## Mean-squared end-to-end distance (MSED)
 One of the most practical and widely used methods for thepersistence length estimation is to calculate the mean-squaredend-to-end distance (MSED) between contour segments. This characteristic for a worm-like chains model in 2D has the following theoretical dependence:
