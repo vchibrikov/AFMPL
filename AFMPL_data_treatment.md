@@ -7,5 +7,16 @@ Current setup consist of three scripts - AFMPL_start_end_point.py, AFMPL_astat_p
 - RStudio version: 2022.07.1 Build 554
 
 ## AFMPL_astat_path.py
-The script imports Bruker AFM images, processes them, and creates heatmaps using Matplotlib for visualization (optionally). With 'astar_pathfinding_timeout' script performs A* pathfinding algorithm with a timeout, returning list of tuples representing the path from start to goal. With 'heuristic' script calculates contour length of a path, returning list of tuples representing the path. 'calculate_shortest_distance' allows to calculate the shortest distance between start and end points of each path. 'calculate_angles' allow to calculate angles between three consecutive points in a path, resulting list of angles in degrees as an output.
-Script allows to extracts various metrics, such as fiber height, fiber contour length, fiber tangent angles, fiber contour coordinates, etc. to csv files.
+The script imports output data of AFMPL_astat_path.py script, processes them, routput and analyse its main data (height, contour length, persistence length, fiber and segment tangent angles, contour coordinates, etc.). Main accent in current code is focused on evaluation of persistence length by three methods - mean-squared end-to-end distance (MSED), bond correlation function (BCF), and mean-squared midpoint displacement (MSMD). Current methods on persistence length evaluation were previously show in paper:
+Usov, I., & Mezzenga, R. (2015). FiberApp: an open-source software for tracking and analyzing polymers, filaments, biomacromolecules, and fibrous objects. Macromolecules, 48(5), 1269-1280. DOI: 10.1021/ma502264c. Further method explanation is taken from the respected paper, and for more details, I strongly refer you to that paper.
+
+## Mean-squared end-to-end distance (MSED)
+One of the most practical and widely used methods for thepersistence length estimation is to calculate the mean-squaredend-to-end distance (MSED) between contour segments. This characteristic for a WLC model in 2D hasthe following theoretical dependence:
+$⟨R^2⟩ = 4λ*(l−2*λ(1 − e^(−l/(2*λ)))$
+
+
+## Bond correlation function (BCF)
+
+
+
+## Mean-squared midpoint displacement (MSMD)
