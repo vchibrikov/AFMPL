@@ -12,7 +12,7 @@ Usov, I., & Mezzenga, R. (2015). FiberApp: an open-source software for tracking 
 
 ## Mean-squared end-to-end distance (MSED)
 One of the most practical and widely used methods for thepersistence length estimation is to calculate the mean-squaredend-to-end distance (MSED) between contour segments. This characteristic for a WLC model in 2D hasthe following theoretical dependence:
-$⟨R^2⟩ = 4λ*(l−2*λ(1 − e^(−l/(2*λ)))$
+$R^2 = 4 \lambda (l - 2 \lambda (1 - e^{-\frac{l}{2\lambda}}))$
 
 
 ## Bond correlation function (BCF)
