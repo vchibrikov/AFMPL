@@ -24,6 +24,12 @@ The bond correlation function (BCF) is the most generalway to evaluate the persi
 
 $\cos(\theta) = e^{-\frac{l}{2\lambda}}$
 
-where θ is the angle between tangent directions of any two segments along a fibril contour separated by an arc length l.
+ where λ is the persistence length, θ is the angle (in rad) between tangent directions of any two segments along a fibril contour separated by an arc length l.
 
 ## Mean-squared midpoint displacement (MSMD)
+
+A different method thatcan be successfully applied only to very stiff fiber-like objects (l < λ) is the mean-squared midpoint displacement (MSMD). The equation, describing the behavior of a midpoint deviation has the following form:
+
+$u^2 = \frac{l^3}{48\lambda}$
+
+where λ is the persistence length, $u^2$ is the mean-squared midpoint displacement between anypair of segments along a contour, separated by an arc length l. This expression is derived with an assumption that thesedeviations are small in comparison to the corresponding arclengths (|ux|≪l).
