@@ -11,12 +11,19 @@ The script imports output data of AFMPL_astat_path.py script, processes them, ro
 Usov, I., & Mezzenga, R. (2015). FiberApp: an open-source software for tracking and analyzing polymers, filaments, biomacromolecules, and fibrous objects. Macromolecules, 48(5), 1269-1280. DOI: 10.1021/ma502264c. Further method explanation is taken from the respected paper, and for more details, I strongly refer you to that paper.
 
 ## Mean-squared end-to-end distance (MSED)
-One of the most practical and widely used methods for thepersistence length estimation is to calculate the mean-squaredend-to-end distance (MSED) between contour segments. This characteristic for a WLC model in 2D hasthe following theoretical dependence:
+One of the most practical and widely used methods for thepersistence length estimation is to calculate the mean-squaredend-to-end distance (MSED) between contour segments. This characteristic for a worm-like chains model in 2D has the following theoretical dependence:
+
 $R^2 = 4 \lambda (l - 2 \lambda (1 - e^{-\frac{l}{2\lambda}}))$
 
+where λ is the persistence length and R is the direct distance between any pair of segments along a contour separated by an arc length l.
+
+Image respresentation of MSED method is provided on image below:
 
 ## Bond correlation function (BCF)
+The bond correlation function (BCF) is the most generalway to evaluate the persistence length. For a worm-like chains in 2D, it corresponds to the following equation:
 
+$\cos(\theta) = e^{-\frac{l}{2\lambda}}$
 
+where θ is the angle between tangent directions of any two segments along a fibril contour separated by an arc length l.
 
 ## Mean-squared midpoint displacement (MSMD)
