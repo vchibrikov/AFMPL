@@ -21,7 +21,7 @@ $R^2 = 4 \lambda (l - 2 \lambda (1 - e^{-\frac{l}{2\lambda}}))$
 where $λ$ is the persistence length and $R$ is the direct distance between any pair of segments along a contour separated by an arc length $l$.
 
 Graphical respresentation of MSED method is provided on image below:
-![PERSISTENCE_LENGTH_MSED_30 12 2023_VC](https://github.com/vchibrikov/AFMPL/assets/98614057/61b74b36-d63a-4d6c-8e48-eb746563630b)
+![PERSISTENCE_LENGTH_MSED_30 12 2023_VC](https://github.com/vchibrikov/AFMPL/assets/98614057/43bb5b27-5a6f-40f6-9592-8c982204e0eb)
 
 
 ## Bond correlation function (BCF)
