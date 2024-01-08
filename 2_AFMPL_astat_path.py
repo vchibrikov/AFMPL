@@ -27,8 +27,7 @@ output_path_folder = '/Users/vadymchibrikov/...'
 # Returns:
 # - List of tuples representing the path from start to goal.
 
-def astar_pathfinding_timeout(grid, start, goal, visualize = False):
-
+def astar_pathfinding_timeout(grid, start, goal, visualize = True):
     open_set = [(0, start)]
     heapq.heapify(open_set)
     came_from = {start: None}
@@ -41,14 +40,14 @@ def astar_pathfinding_timeout(grid, start, goal, visualize = False):
             break
 
         neighbors = [(current_node[0] + 1, current_node[1]),
-                    (current_node[0] - 1, current_node[1]),
-                    (current_node[0], current_node[1] + 1),
-                    (current_node[0], current_node[1] - 1)]
+                     (current_node[0] - 1, current_node[1]),
+                     (current_node[0], current_node[1] + 1),
+                     (current_node[0], current_node[1] - 1)]
 
         for neighbor in neighbors:
-            if 0 <= neighbor[0] < grid.shape[0] and 0 <= neighbor[1] < grid.shape[1]:
+            if 0.3 <= neighbor[0] < grid.shape[0] and 0.3 <= neighbor[1] < grid.shape[1]:
                 try:
-                    if grid.iat[neighbor[0], neighbor[1]] > 0:
+                    if grid.iat[neighbor[0], neighbor[1]] > 0.3:
                         new_cost = cost_so_far[current_node] + grid.iloc[neighbor]
                         if neighbor not in cost_so_far or new_cost < cost_so_far[neighbor]:
                             cost_so_far[neighbor] = new_cost
@@ -72,7 +71,6 @@ def astar_pathfinding_timeout(grid, start, goal, visualize = False):
     path.reverse()
 
     if visualize:
-
         # Visualize the grid and path
         fig, ax = plt.subplots(figsize=(12, 7))
         cax = ax.matshow(grid, cmap='gray')
