@@ -16,7 +16,8 @@ Several examples of A* pathfinding algorithm:
 ![Figure_1](https://github.com/vchibrikov/AFMPL/assets/98614057/77ff4e29-8cf7-4e0b-b5e4-15aa46085276)
 ![Figure_2](https://github.com/vchibrikov/AFMPL/assets/98614057/33f6dd7e-a4be-4723-b381-89ad1c4bf463)
 ![Figure_3](https://github.com/vchibrikov/AFMPL/assets/98614057/da7cf4c3-c71d-48f5-a8c6-01ebbf86eb19)
-![Figure_4](https://github.com/vchibrikov/AFMPL/assets/98614057/a698c1e7-07c9-4ff7-b3fc-c5912868a0c5)
+![Figure_4](https://github.com/vchibrikov/AFMPL/assets/98614057/daf6e954-66fc-434d-9afb-a07c9ec7b99a)
+
 
 Example of a contour length (in pixels) evaluation output:
 ![Screenshot 2023-12-29 at 22 11 11](https://github.com/vchibrikov/AFMPL/assets/98614057/e4265385-5a01-4029-9c89-44e53a3537fe)
