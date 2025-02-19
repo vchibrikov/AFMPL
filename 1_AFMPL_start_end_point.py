@@ -68,8 +68,8 @@ def on_scroll(event):
 selected_coordinates = []
 
 # Define input and output directories
-input_folder = '/Users/vadymchibrikov/Desktop/AFMPL/1_input_image/OPUS26/'
-output_folder = '/Users/vadymchibrikov/Desktop/AFMPL/1_output_coordinates/'
+input_folder = '/Users/path/to/input/image/folder/'
+output_folder = '/Users/path/to/output/coordinates/folder/'
 
 # Check for files in input folder
 files_in_input_folder = os.listdir(input_folder)
