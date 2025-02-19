@@ -16,17 +16,15 @@ pacman::p_load('dplyr', 'tidyr', 'gapminder',
                'grid', 'ggpubr', 'scales',
                'bbplot')
 
-image_length_nm <- 2000
-image_quality_px <- 1024
+image_length_nm <- "Define image length"
+image_quality_px <- "Define samples per line parameter"
 pixel_scale <- image_length_nm/image_quality_px
-segment_number <- 10
-
-#### MERGE DATAFILES ####
+segment_number <- "Define segment number"
 
 #### CALCULATE STATISTICS AND EXTRACT ####
 
 # heigth
-file_path <- "output_path/OPUS26_DASP_0.01_S1_A_S_3.056_results.xlsx"
+file_path <- "output_path/TESTFILE_results.xlsx"
 data <- read_excel(file_path, sheet = "height_nm")
 
 pattern <- "(.*?)_(.*?)_(.*?)_(.*?)_(.*?)_(.*?)_(.*?)_(.*)"
@@ -180,7 +178,7 @@ writeData(wb, "summary", shape_factor)
 # Save the workbook
 saveWorkbook(wb, "calculations_output/shape_factor_statistics.xlsx", overwrite = TRUE)
 
-#### PERSISTENCE LENGTH - MSED ####
+#### PERSISTENCE LENGTH - MEAN-SQUARED-END-TO-END DISTANCE ####
 rm(list = ls(all.names = TRUE), envir = .GlobalEnv)
 
 image_length_nm <- 2000
@@ -311,7 +309,7 @@ for (segment_number in 1:segment_number) {
   rm(persistence.length.msed, persistence.length.msed.summary, odd_rows, even_rows, shortest.distance, filename_split, filename_split_2)
 }
 
-#### PERSISTENCE LENGTH - MSMD ####
+#### PERSISTENCE LENGTH - MEAN-SQUARED MIDPOINT DISPLACEMENT ####
 rm(list = ls(all.names = TRUE), envir = .GlobalEnv)
 
 image_length_nm <- 2000
@@ -441,7 +439,7 @@ for (segment_number in 1:segment_number) {
   saveWorkbook(wb, paste0("calculations_output/persistence_length_msmd_", segment_number, "_segment_statistics.xlsx"), overwrite = TRUE)
 }
 
-#### PERSISTENCE LENGTH - BCF ####
+#### PERSISTENCE LENGTH - BOND CORRELATIOB FUNCTION ####
 rm(list = ls(all.names = TRUE), envir = .GlobalEnv)
 
 image_length_nm <- 2000
