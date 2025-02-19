@@ -11,17 +11,17 @@ import xlsxwriter
 import time
 
 # Set threshold
-lower_threshold = 0.25
-higher_threshold = 0.7
-a_path_tolerance = 0.5
+lower_threshold = "Define lower threshold boundary"
+higher_threshold = "Define higher threshold boundary"
+a_path_tolerance = "Define threshold tolerancy factor"
 
 # Set input
-input_image_folder = '/Users/vadymchibrikov/Desktop/AFMPL/2_input_image/'
-input_coordinates_folder = '/Users/vadymchibrikov/Desktop/AFMPL/1_output_coordinates/'
+input_image_folder = '/User/path/to/input/image/folder/'
+input_coordinates_folder = '/User/path/to/input/coordinates/folder/'
 
 # Set output folders
-output_path_folder = '/Users/vadymchibrikov/Desktop/AFMPL/2_output_path/'
-output_image_folder = '/Users/vadymchibrikov/Desktop/AFMPL/2_output_image/'
+output_path_folder = '/User/path/to/output/path/folder/'
+output_image_folder = '/User/path/to/output/image/folder/'
 
 # Set a timeout for the A* pathfinding function
 @timeout_decorator.timeout(10)
