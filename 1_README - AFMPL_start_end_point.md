@@ -12,17 +12,25 @@ The script imports Bruker AFM images, processes them, and creates heatmaps using
 handles mouse button clicks, allowing for determination of the coordinates of fiber ends, with its further storage. With 'on_scroll(event)', script adjusts the plot limits based on the direction of the scroll, allowing to zoom image in and out. Main script initializes a list (selected_coordinates) to store fiber ends coordinates and specifies input and output folders. In addition, script iterates over the image files in the specified input folder, processes each image, and creates a heatmap for visualization. Output CSV filenames with defined coordinates are generated based on the current image filename with the suffix _coordinates.csv. Input and processed AFM images, as well as output image interaction interface and file of fiber coordinates are given below.
 
 ## Examples
-Raw AFM image imported: 
-![Figure_0](https://github.com/vchibrikov/AFMPL/assets/98614057/3830dba3-9d2c-4f05-b6b1-fc36164c2762)
+Raw Nanoscope image imported: 
+(https://github.com/vchibrikov/AFMPL/assets/98614057/3830dba3-9d2c-4f05-b6b1-fc36164c2762)
 
 Processed AFM height sensor data (with an implemented removal of polynomial background, scars, plane correction):
-![Figure_1](https://github.com/vchibrikov/AFMPL/assets/98614057/a577aee2-0a72-4118-9753-8e0a0511e4fe)
+<img width="1728" alt="1" src="https://github.com/user-attachments/assets/fc86ce13-8e34-4798-84b3-9862528dd375" />
 
-Interaction with image processing interface:
-![Figure_2](https://github.com/vchibrikov/AFMPL/assets/98614057/5ce425fd-e7b1-4acd-856e-1db51d724afa)
+Slidebar threshold image filtering applied to raw data:
+<img width="1728" alt="2" src="https://github.com/user-attachments/assets/2e840579-23fd-4385-8c41-b021594f0703" />
 
-Structure of output file on fiber coordinates:
-![Figure 3](https://github.com/vchibrikov/AFMPL/assets/98614057/b453af24-a818-4b23-a537-ade9420408eb)
+Region of interest zoomed in:
+<img width="1728" alt="3" src="https://github.com/user-attachments/assets/64e2beae-3aa0-41c4-b4cb-4303daf56301" />
 
+Interaction with a data - defining start and end points of a fiberlike object:
+<img width="1728" alt="4" src="https://github.com/user-attachments/assets/733e8c63-a523-4d7b-9876-ddebe535826f" />
 
+Example of an output data structure:
+![5](https://github.com/user-attachments/assets/489e627a-2b01-41fb-b472-27664034a1fd)
 
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+> For any issues or feature requests, feel free to open an issue in this repository.
