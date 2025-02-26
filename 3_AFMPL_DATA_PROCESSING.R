@@ -17,44 +17,43 @@ pacman::p_load('dplyr', 'tidyr', 'gapminder',
                'grid', 'ggpubr', 'scales',
                'bbplot')
 
-image_length_nm <- 2000
-image_quality_px <- 1024
+image_length_nm <- 
+image_quality_px <- 
 pixel_scale <- image_length_nm/image_quality_px
-segment_number <- 10
+segment_number <- 
 
 #### MERGE DATAFILES ####
-# merge_sheets_by_row <- function(file_paths) {
-#   all_sheets_data <- list()
-# 
-#   for (file in file_paths) {
-#     sheet_names <- excel_sheets(file)
-# 
-#     for (sheet_name in sheet_names) {
-#       sheet_data <- read_excel(file, sheet = sheet_name)
-# 
-#       if (sheet_name %in% names(all_sheets_data)) {
-#         all_sheets_data[[sheet_name]] <- bind_rows(all_sheets_data[[sheet_name]], sheet_data)
-#       } else {
-#         all_sheets_data[[sheet_name]] <- sheet_data
-#       }
-#     }
-#   }
-# 
-#   return(all_sheets_data)
-# }
-# 
-# folder_path <- "./RESULTS/1_output_path/"
-# 
-# file_paths <- list.files(folder_path, pattern = "\\.xlsx$", full.names = TRUE)
-# 
-# merged_data <- merge_sheets_by_row(file_paths)
-# 
-# write_xlsx(merged_data, "./RESULTS/2_calculations_output/merged_output.xlsx")
+merge_sheets_by_row <- function(file_paths) {
+  all_sheets_data <- list()
+
+  for (file in file_paths) {
+    sheet_names <- excel_sheets(file)
+
+    for (sheet_name in sheet_names) {
+      sheet_data <- read_excel(file, sheet = sheet_name)
+
+      if (sheet_name %in% names(all_sheets_data)) {
+        all_sheets_data[[sheet_name]] <- bind_rows(all_sheets_data[[sheet_name]], sheet_data)
+      } else {
+        all_sheets_data[[sheet_name]] <- sheet_data
+      }
+    }
+  }
+
+  return(all_sheets_data)
+}
+
+folder_path <- "./RESULTS/1_output_path/"
+
+file_paths <- list.files(folder_path, pattern = "\\.xlsx$", full.names = TRUE)
+
+merged_data <- merge_sheets_by_row(file_paths)
+
+write_xlsx(merged_data, "./filepath/to/merged/output/merged_output.xlsx")
 
 #### CALCULATE STATISTICS AND EXTRACT ####
-
-# heigth
-file_path <- "./RESULTS/2_calculations_output/merged_output.xlsx"
+# HEIGHT
+file_path <- "./filepath/to/merged/output/merged_output.xlsx"
 data <- read_excel(file_path, sheet = "height_nm")
 
 pattern <- "(.*?)_(.*?)_(.*?)_(.*?)_(.*?)_(.*?)_(.*?)_(.*)"
@@ -107,10 +106,10 @@ addWorksheet(wb, "summary")
 writeData(wb, "summary", data_height)
 
 # Save the workbook
-saveWorkbook(wb, "./RESULTS/2_calculations_output/height_statistics.xlsx", overwrite = TRUE)
+saveWorkbook(wb, "./output/path/to/height_statistics.xlsx", overwrite = TRUE)
 
-#length
-file_path <- "./RESULTS/2_calculations_output/merged_output.xlsx"
+# LENGTH
+file_path <- "./filepath/to/merged/output/merged_output.xlsx"
 data <- read_excel(file_path, sheet = "contour_length_px")
 
 pattern <- "(.*?)_(.*?)_(.*?)_(.*?)_(.*?)_(.*?)_(.*?)_(.*)"
@@ -158,10 +157,9 @@ addWorksheet(wb, "summary")
 writeData(wb, "summary", data_contour_length)
 
 # Save the workbook
-file_path <- "./RESULTS/2_calculations_output/merged_output.xlsx"
-saveWorkbook(wb, "./RESULTS/2_calculations_output/length_statistics.xlsx", overwrite = TRUE)
+saveWorkbook(wb, "./output/path/to/length_statistics.xlsx", overwrite = TRUE)
 
-#shape factor
+# Shape factor
 data_end_to_end_distance_px <- read_excel(file_path, sheet = "end_to_end_distance_px")
 data_contour_length_px <- read_excel(file_path, sheet = "contour_length_px")
 
@@ -217,17 +215,17 @@ addWorksheet(wb, "summary")
 writeData(wb, "summary", shape_factor)
 
 # Save the workbook
-saveWorkbook(wb, "./RESULTS/2_calculations_output/shape_factor_statistics.xlsx", overwrite = TRUE)
+saveWorkbook(wb, "./output/path/to/shape_factor_statistics.xlsx", overwrite = TRUE)
 
 #### PERSISTENCE LENGTH - MSED ####
 rm(list = ls(all.names = TRUE), envir = .GlobalEnv)
 
-image_length_nm <- 2000
-image_quality_px <- 1024
+image_length_nm <-
+image_quality_px <-
 pixel_scale <- image_length_nm/image_quality_px
-segment_number <- 10
+segment_number <-
 
-file_path <- "./RESULTS/2_calculations_output/merged_output.xlsx"
+file_path <- "./filepath/to/merged/output/merged_output.xlsx"
 data.path.coordinates <- read_excel(file_path, sheet = "path_coordinates")
 
 # Loop over segment numbers from 1 to 10
@@ -342,7 +340,7 @@ for (segment_number in 1:segment_number) {
   addWorksheet(wb, "summary")
   writeData(wb, "summary", persistence.length.msed.summary)
 
-  saveWorkbook(wb, paste0("./RESULTS/2_calculations_output/msed/persistence_length_msed_", segment_number, "_segment_statistics.xlsx"), overwrite = TRUE)
+  saveWorkbook(wb, paste0("./path/to/save/results/persistence_length_msed_", segment_number, "_segment_statistics.xlsx"), overwrite = TRUE)
 
   # Cleanup for next iteration
   rm(persistence.length.msed, persistence.length.msed.summary, odd_rows, even_rows, shortest.distance, filename_split, filename_split_2)
@@ -351,10 +349,10 @@ for (segment_number in 1:segment_number) {
 #### PERSISTENCE LENGTH - MSMD ####
 rm(list = ls(all.names = TRUE), envir = .GlobalEnv)
 
-image_length_nm <- 2000
-image_quality_px <- 1024
+image_length_nm <-
+image_quality_px <-
 pixel_scale <- image_length_nm/image_quality_px
-segment_number <- 10
+segment_number <-
 
 for (segment_number in 1:segment_number) {
 
@@ -473,16 +471,16 @@ for (segment_number in 1:segment_number) {
   addWorksheet(wb, "summary")
   writeData(wb, "summary", persistence.length.msmd.summary)
 
-  saveWorkbook(wb, paste0("./RESULTS/2_calculations_output/msmd/persistence_length_msmd_", segment_number, "_segment_statistics.xlsx"), overwrite = TRUE)
+  saveWorkbook(wb, paste0("./path/to/save/results/persistence_length_msmd_", segment_number, "_segment_statistics.xlsx"), overwrite = TRUE)
 }
 
 #### PERSISTENCE LENGTH - BCF ####
 rm(list = ls(all.names = TRUE), envir = .GlobalEnv)
 
-image_length_nm <- 2000
-image_quality_px <- 1024
+image_length_nm <-
+image_quality_px <-
 pixel_scale <- image_length_nm/image_quality_px
-segment_number <- 10
+segment_number <-
 
 for (segment_number in 1:segment_number) {
 
@@ -626,5 +624,5 @@ writeData(wb, "data", persistence.length.bcf)
 addWorksheet(wb, "summary")
 writeData(wb, "summary", persistence.length.bcf.summary)
 
-saveWorkbook(wb, paste0("./RESULTS/2_calculations_output/bcf/persistence_length_bcf_", segment_number, "_segment_statistics.xlsx"), overwrite = TRUE)
+saveWorkbook(wb, paste0("./path/to/save/results/persistence_length_bcf_", segment_number, "_segment_statistics.xlsx"), overwrite = TRUE)
 }
