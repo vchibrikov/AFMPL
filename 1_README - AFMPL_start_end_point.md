@@ -19,16 +19,14 @@ handles mouse button clicks, allowing for determination of the coordinates of fi
 ## Examples
 
 Processed AFM height sensor data (with an implemented removal of polynomial background, scars, plane correction):
-<img width="1728" alt="1" src="https://github.com/user-attachments/assets/fc86ce13-8e34-4798-84b3-9862528dd375" />
+<img width="1340" alt="Знімок екрана 2025-02-26 о 13 00 09" src="https://github.com/user-attachments/assets/90665b14-7502-46ea-a603-f996f8ea164c" />
 
 Slidebar threshold image filtering applied to raw data:
-<img width="1728" alt="2" src="https://github.com/user-attachments/assets/2e840579-23fd-4385-8c41-b021594f0703" />
+<img width="1343" alt="Знімок екрана 2025-02-26 о 13 00 26" src="https://github.com/user-attachments/assets/bb92ee11-763b-4541-acac-1fcaa503d131" />
+<img width="1337" alt="Знімок екрана 2025-02-26 о 13 00 57" src="https://github.com/user-attachments/assets/768ff8c6-52b7-456a-814e-87ded3b1c18b" />
 
-Region of interest zoomed in:
-<img width="1728" alt="3" src="https://github.com/user-attachments/assets/64e2beae-3aa0-41c4-b4cb-4303daf56301" />
-
-Interaction with a data - defining start and end points of a fiberlike object:
-<img width="1728" alt="4" src="https://github.com/user-attachments/assets/733e8c63-a523-4d7b-9876-ddebe535826f" />
+Region of interest zoomed in, as well as interaction with a data - defining start and end points of a fiberlike object:
+<img width="1346" alt="Знімок екрана 2025-02-26 о 13 01 26" src="https://github.com/user-attachments/assets/62b29ff9-86cc-4623-ad3f-08427367f856" />
 
 Example of an output data structure:
 ![5](https://github.com/user-attachments/assets/489e627a-2b01-41fb-b472-27664034a1fd)
