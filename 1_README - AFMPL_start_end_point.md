@@ -29,6 +29,7 @@ Region of interest zoomed in, as well as interaction with a data - defining star
 <img width="1346" alt="Знімок екрана 2025-02-26 о 13 01 26" src="https://github.com/user-attachments/assets/62b29ff9-86cc-4623-ad3f-08427367f856" />
 
 Example of an output data structure:
+
 ![5](https://github.com/user-attachments/assets/489e627a-2b01-41fb-b472-27664034a1fd)
 
 ## License
