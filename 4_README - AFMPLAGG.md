@@ -36,6 +36,9 @@ The script performs the following operations:
 - Interactive plotting: displays the image and detected contours using matplotlib; provides sliders for adjusting the lower and upper thresholds, as well as the minimum contour area for detection; updates the displayed image interactively based on slider values (Fig.1)
 - Data output: saves the contour coordinates and area/volume metrics into an Excel file; saves the processed image with contours drawn on it as a JPG file.
 
+![Figure_1](https://github.com/user-attachments/assets/b1d7fc8c-33a1-47fe-b400-073294bb0f6b)
+Fig.1. USer interface representation of an AFMPLAGG.py script.
+
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
