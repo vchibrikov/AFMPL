@@ -36,11 +36,11 @@ Fig. 3. Raw AFM image.
 <img width="3072" height="3072" alt="OPUS26_DASP_0 01_S1_A_S_5 031_skeletonized" src="https://github.com/user-attachments/assets/6f4f8c72-dc55-4bba-9e6d-0ac54d399eec" />
 Fig. 4. Skeletonized fibers detected.
 
-<img width="900" height="1180" alt="5" src="https://github.com/user-attachments/assets/6d540e3d-f522-41d4-a4a0-4af921d3cac4" />
-
+<img width="690" height="1180" alt="5" src="https://github.com/user-attachments/assets/6d540e3d-f522-41d4-a4a0-4af921d3cac4" />
+Fig. 5. Fiber height .xlsx sheet. For the "structure_id" column those 1_, 2_, etc. values define molecule number; those _0 values define backbone values, while others (_1, _2, etc.) - sidechain values. height_nm is a difference of a raw_height_nm (meaning those of a fiber height laying on some non-zero background), while bg_median_nm is a median background height, subtracted from raw_height_nm.
 
 <img width="468" height="1179" alt="6" src="https://github.com/user-attachments/assets/8cdbd986-201a-46fa-b3b6-e96a9453331b" />
-
+Fig. 6. Fiber path coordinates a a row requence of x and y values. For the "structure_id" column those 1_, 2_, etc. values define molecule number; those _0 values define backbone values, while others (_1, _2, etc.) - sidechain values.
 
 ## Adidtional notes
 - Sometimes in Bruker, height sensor may be called either "Height Sensor" or "Sensor"
