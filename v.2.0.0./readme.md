@@ -19,6 +19,22 @@ Tools utilized:
 
 3. Using the GUI:
 - Sliders: adjust the height threshold manually to isolate fibers (Fig. 1.);
-- Autotune: click to automatically find the best threshold based on the parameters set in the text boxes;
+- Autotune: click to automatically find the best threshold based on the parameters set in the text boxes (Fig. 2.);
 - Full update: click to run the heavy analysis (skeletonization) and see the green/blue fiber traces;
 - Save & Next: exports the data and moves to the next file in the folder.
+
+<img width="2560" height="1337" alt="3" src="https://github.com/user-attachments/assets/687104c0-bd3d-4ae1-9867-12a7f1664de3" />
+Fig. 1. Height Threshold slider to manually adjust skeletonization based on height constraints.
+
+<img width="2560" height="1337" alt="4" src="https://github.com/user-attachments/assets/f9a187cd-e2f4-40c0-b193-9efc57636850" />
+Fig. 2. Autotune analysis is based on automatics thresholding with the range of min-max, with a predefined step. Plateau stability is defined as a relatively constant number of fibers tracked within the range of current max threshold and a deviation gap (+/- nm), in which a number of fiber decreases less that certain predefined percentage (Tol%).
+
+## Examples 
+<img width="3072" height="3072" alt="OPUS26_DASP_0 01_S1_A_S_5 031_raw" src="https://github.com/user-attachments/assets/6e4bea61-417a-420a-81b6-353d845d8a30" /> 
+Fig. 3. Raw AFM image.
+
+<img width="3072" height="3072" alt="OPUS26_DASP_0 01_S1_A_S_5 031_skeletonized" src="https://github.com/user-attachments/assets/6f4f8c72-dc55-4bba-9e6d-0ac54d399eec" />
+Fig. 4. Skeletonized fibers detected.
+
+
+> Warning! Sometimes in Bruker, height sensor may be called either "Height Sensor" or "Sensor"
