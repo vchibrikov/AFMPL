@@ -39,6 +39,7 @@ For the "structure_id" column those 1_, 2_, etc. values define molecule number; 
 
 ### Fig. 4. Fiber path coordinates as a row sequence of x and y values.
 For the "structure_id" column those 1_, 2_, etc. values define molecule number; those _0 values define backbone values, while others (_1, _2, etc.) - sidechain values.
+
 <img width="626" height="989" alt="image" src="https://github.com/user-attachments/assets/f0c85528-b4bc-4b15-960d-68d0dfa2f3e4" />
 
 ### Additional notes
@@ -46,4 +47,3 @@ For the "structure_id" column those 1_, 2_, etc. values define molecule number; 
 
 ## License 
 See the LICENSE file for details.
-
