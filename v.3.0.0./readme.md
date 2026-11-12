@@ -38,9 +38,10 @@ For the "structure_id" column those 1_, 2_, etc. values define molecule number; 
 <img width="1060" height="895" alt="image" src="https://github.com/user-attachments/assets/366aaf54-d761-4271-b73f-347b52fef0f4" />
 
 ### Fig. 4. Fiber path coordinates as a row sequence of x and y values.
-For the "structure_id" column those 1_, 2_, etc. values define molecule number; those _0 values define backbone values, while others (_1, _2, etc.) - sidechain values.Additional notes
+For the "structure_id" column those 1_, 2_, etc. values define molecule number; those _0 values define backbone values, while others (_1, _2, etc.) - sidechain values.
 <img width="626" height="989" alt="image" src="https://github.com/user-attachments/assets/f0c85528-b4bc-4b15-960d-68d0dfa2f3e4" />
 
+### Additional notes
 !Sometimes in Bruker, height sensor may be called either "Height Sensor" or "Sensor"LicenseThis project is licensed under the MIT 
 
 ## License 
